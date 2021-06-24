@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/tailwind.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Application | eRegistry</title>
+</head>
+<body>
+
+    <!--Form Body-->
+    <!-- Div for body wrapper -->
+    <div class=" mt-5 lg:py-2 h-screen">
+              
+                <form action="#" method="POST" class=" bg-yellow-300 lg:m-2 container p-2">
+                  <!-- Personal Data wrappere setion-->
+                   <div class="md:grid md:grid-cols-3 md:gap-6" id="personal">
+                                            
+                        <!--Section for heading-->
+                        <div class="md:col-span-1">
+                                <div class="px-4 sm:px-0">
+                                <h3 class="text-lg font-medium leading-6 text-gray-900">Personal Data</h3>
+                                <p class="mt-1 text-sm text-gray-600">
+                                    This information is required for the passport details as well as data for tracing back.
+                                </p>
+                                </div>
+                        </div>
+
+                        <!-- End of heading section-->
+
+                        
+                  <!-- Personal Data Section-->
+
+                    <div class="shadow overflow-hidden sm:rounded-md  md:col-span-2">
+                            <div class="px-4 py-5 sm:p-6">
+                              <div class="grid grid-cols-6 gap-6">
+                                <div class="col-span-6 sm:col-span-3">
+                                  <label for="first_name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                                  <input type="text" name="surname" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+                  
+                                <div class="col-span-6 sm:col-span-3">
+                                  <label for="last_name" class="block text-sm font-medium text-gray-700">Other Names</label>
+                                  <input type="text" name="othernames" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                        <label for="last_name" class="block text-sm font-medium text-gray-700">Maiden Names (<span class="text-xs text-blue-600">Original name for married women</span>) </label>
+                                        <input type="text" name="maiden" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+                  
+                                <div class="col-span-6 sm:col-span-3">
+                                  <label for="email_address" class="block text-sm font-medium text-gray-700">Visible Marks or Percularity</label>
+                                  <input type="email" name="email_address" id="email" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                        <label for="last_name" class="block text-sm font-medium text-gray-700">Birth Entry Number</label>
+                                        <input type="text" name="bentry" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+                  
+                                <div class="col-span-6 sm:col-span-3">
+                                  <label for="email_address" class="block text-sm font-medium text-gray-700">ID Number</label>
+                                  <input type="email" name="id_num" id="email" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                    <label for="sex" class="block text-sm font-medium text-gray-700">Sex</label>
+                                    <select name="sex" id="" class="appearance-none mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                        <option value="M">Male</option>
+                                        <option value="F">Female</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                    <label for="dateofbirth" class="block text-sm font-medium text-gray-700">Date of Birth</label>
+                                    <input type="date" name="dateofbirth" id="" class=" mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                        <label for="marital" class="block text-sm font-medium text-gray-700">Marital Status</label>
+                                        <select name="sex" id="" class="appearance-none mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                            <option value="S">Single</option>
+                                            <option value="M">Married</option>
+                                            <option value="W">Widowed</option>
+                                            <option value="D">Divorced</option>
+                                        </select>
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-2">
+                                        <label for="last_name" class="block text-sm font-medium text-gray-700">Height <span class="text-blue-500 text-xs">(cm)</span> </label>
+                                        <input type="number" name="height" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-2">
+                                        <label for="last_name" class="block text-sm font-medium text-gray-700">Eye Colour </label>
+                                        <input type="text" name="eyecolour" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-2">
+                                        <label for="last_name" class="block text-sm font-medium text-gray-700">Hair Colour </label>
+                                        <input type="text" name="haircolour" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                        <label for="last_name" class="block text-sm font-medium text-gray-700">Place of Birth </label>
+                                        <input type="text" name="placeofbirth" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+                  
+                                <div class="col-span-6 sm:col-span-3">
+                                  <label for="email_address" class="block text-sm font-medium text-gray-700">Country of Birth</label>
+                                  <input type="text" name="country" id="email" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="email_address" class="block text-sm font-medium text-gray-700">Country of permanent Residence</label>
+                                    <input type="text" name="residential" id="email" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="email_address" class="block text-sm font-medium text-gray-700">Profession</label>
+                                    <input type="text" name="occupation" id="email" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+
+                                <!--Contact details-->
+
+                                <div class="col-span-6 sm:col-span-3">
+                                        <label for="last_name" class="block text-sm font-medium text-gray-700">Phone </label>
+                                        <input type="tel" name="phone" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+                  
+                                <div class="col-span-6 sm:col-span-3">
+                                  <label for="email_address" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                  <input type="email" name="email_address" id="email" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+
+                  
+                                
+                  
+                            
+                              </div>
+                            </div>
+                            <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                              <button class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                Next
+                              </button>
+                            </div>
+                        </div>
+    
+                    <!-- End of personal data section-->
+
+                   </div>
+
+
+                   <!--End of personal data section-->
+
+                   <!--NEct of Kin Section-->
+
+
+                   <div class="md:grid md:grid-cols-3 md:gap-6" id="personal">
+                                            
+                      <!--Section for heading-->
+                      <div class="md:col-span-1">
+                              <div class="px-4 sm:px-0">
+                              <h3 class="text-lg font-medium leading-6 text-gray-900">Next of Kin Data</h3>
+                              <p class="mt-1 text-sm text-gray-600">
+                                  This information is required incase of an emergency that the applicant can not handle himself
+                              </p>
+                              </div>
+                      </div>
+
+                      <!-- End of heading section-->
+
+                      
+                <!-- Next of kin Data Section-->
+
+                  <div class="shadow overflow-hidden sm:rounded-md  md:col-span-2">
+                          <div class="px-4 py-5 sm:p-6">
+                            <div class="grid grid-cols-6 gap-6">
+
+                              <div class="col-span-6 sm:col-span-3 lg:col-span-6">
+                                  <label for="first_name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                  <input type="text" name="fullname" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                              </div>
+
+                              <div class="col-span-6 sm:col-span-3">
+                                  <label for="first_name" class="block text-sm font-medium text-gray-700">ID Number</label>
+                                  <input type="text" name="nextkin_id_num" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                              </div>
+
+                              <div class="col-span-6 sm:col-span-3">
+                                  <label for="first_name" class="block text-sm font-medium text-gray-700">Relation to applicant</label>
+                                  <input type="text" name="nextkin_relation" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                              </div>
+
+                              <div class="col-span-6 sm:col-span-3">
+                                  <label for="first_name" class="block text-sm font-medium text-gray-700">Residential Address</label>
+                                  <input type="text" name="nextkin_address" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                              </div>
+
+                              <!--Contact details-->
+
+                              <div class="col-span-6 sm:col-span-3">
+                                      <label for="last_name" class="block text-sm font-medium text-gray-700">Phone </label>
+                                      <input type="tel" name="phone" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                              </div>
+                          
+                            </div>
+                          </div>
+                          <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                            <button  class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                              Next
+                            </button>
+                          </div>
+                      </div>
+  
+                  <!-- End of Next of kin data section-->
+
+                   </div>
+                   <!-- End of next of kin section-->
+
+                   <!--Section for Declaration of Children under 18-->
+
+
+                   <div class="md:grid md:grid-cols-3 md:gap-6">
+                                            
+                      <!--Section for heading-->
+                      <div class="md:col-span-1">
+                              <div class="px-4 sm:px-0">
+                              <h3 class="text-lg font-medium leading-6 text-gray-900">For Children Under the age of 18</h3>
+                              <p class="mt-1 text-sm text-gray-600">
+                                  This section is for Father or any legal guardian 
+                              </p>
+                              </div>
+                      </div>
+
+                      <!-- End of heading section-->
+
+                      
+                <!-- Next of Guardian Data Section-->
+
+                  <div class="shadow overflow-hidden sm:rounded-md  md:col-span-2">
+                          <div class="px-4 py-5 sm:p-6">
+                            <div class="grid grid-cols-6 gap-6">
+
+                              <div class="col-span-6 sm:col-span-3 lg:col-span-6">
+                                  <label for="first_name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                  <input type="text" name="guardianname" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                              </div>
+
+                              <div class="col-span-6 sm:col-span-3">
+                                  <label for="first_name" class="block text-sm font-medium text-gray-700">ID Number</label>
+                                  <input type="text" name="guardianid_num" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                              </div>
+
+                              <div class="col-span-6 sm:col-span-3">
+                                  <label for="first_name" class="block text-sm font-medium text-gray-700">Relation to applicant</label>
+                                  <input type="text" name="guardian_relation" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                              </div>
+                          
+                            </div>
+                          </div>
+                          <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                            <button  class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                              Next
+                            </button>
+                          </div>
+                      </div>
+
+  
+                      <!-- End of Guardian data section-->
+
+
+
+
+
+
+
+
+
+                   </div>
+
+                   <!--End of section for Declaration ofchildren under 18-->
+
+                                       
+                   <!-- Divorced Woman Section Section-->
+
+
+                   <div class="md:grid md:grid-cols-3 md:gap-6" >
+                                            
+                      <!--Section for heading-->
+                      <div class="md:col-span-1">
+                              <div class="px-4 sm:px-0">
+                              <h3 class="text-lg font-medium leading-6 text-gray-900">Divorced, Married or Widowed Women</h3>
+                              <p class="mt-1 text-sm text-gray-600">
+                                  This information is required for traceback only
+                              </p>
+                              </div>
+                      </div>
+
+                      <!-- End of heading section-->
+
+  
+
+                  <div class="shadow overflow-hidden sm:rounded-md  md:col-span-2">
+                          <div class="px-4 py-5 sm:p-6">
+                            <div class="grid grid-cols-6 gap-6">
+
+                              <div class="col-span-6 sm:col-span-3 ">
+                                  <label for="first_name" class="block text-sm font-medium text-gray-700">Husband Name</label>
+                                  <input type="text" name="husbandname" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                              </div>
+
+                              <div class="col-span-6 sm:col-span-3">
+                                  <label for="first_name" class="block text-sm font-medium text-gray-700">Date of Marriage</label>
+                                  <input type="date" name="marriage" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                              </div>
+
+                              <div class="col-span-6 sm:col-span-3">
+                                  <label for="first_name" class="block text-sm font-medium text-gray-700">Country of Marriage</label>
+                                  <input type="text" name="mariagecountry" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                              </div>
+
+                              <div class="col-span-6 sm:col-span-3">
+                                  <label for="first_name" class="block text-sm font-medium text-gray-700">Husband Citizenship</label>
+                                  <input type="text" name="citizenship" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                              </div>
+
+                              <div class="col-span-6 sm:col-span-3">
+                                  <label for="first_name" class="block text-sm font-medium text-gray-700">Marriage or Divorce Number</label>
+                                  <input type="text" name="marriage_num" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                              </div>
+                              
+
+                              <div class="col-span-6 sm:col-span-3">
+                                <label for="" class="block text-sm font-medium text-gray-700">Were you previously married</label>
+                                <select name="previouslymarried"  class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                    <option value="Y">Yes</option>
+                                    <option value="N">No</option>
+                                  </select>
+                              </div>
+
+                              <div class="col-span-6 sm:col-span-3">
+                                  <label for="first_name" class="block text-sm font-medium text-gray-700">If married more than once write all the details</label>
+                                  <textarea name="previousmarriage" id="" cols="30" rows="10" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-20">
+
+                                  </textarea>
+                              </div>
+                          
+                            </div>
+                          </div>
+                          <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                            <button  class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                              Next
+                            </button>
+                          </div>
+                      </div>
+  
+                  <!-- End of Next of kin data section-->
+
+                   </div>
+
+
+                   <!-- Ed of Divorced Woman-->
+
+
+                    <!--  Section for Lost or Stolen passports Section-->
+
+
+                    <div class="md:grid md:grid-cols-3 md:gap-6" >
+                                            
+                        <!--Section for heading-->
+                        <div class="md:col-span-1">
+                                <div class="px-4 sm:px-0">
+                                <h3 class="text-lg font-medium leading-6 text-gray-900">Lost or Stolen passports</h3>
+                                <p class="mt-1 text-sm text-gray-600">
+                                    This information is required for traceback only
+                                </p>
+                                </div>
+                        </div>
+  
+                        <!-- End of heading section-->
+  
+    
+  
+                    <div class="shadow overflow-hidden sm:rounded-md  md:col-span-2">
+                            <div class="px-4 py-5 sm:p-6">
+                              <div class="grid grid-cols-6 gap-6">
+  
+                                <div class="col-span-6 sm:col-span-2 ">
+                                    <label for="first_name" class="block text-sm font-medium text-gray-700">Passport Number</label>
+                                    <input type="text" name="stolenpass_num" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+  
+                                <div class="col-span-6 sm:col-span-2">
+                                    <label for="first_name" class="block text-sm font-medium text-gray-700">Issued On</label>
+                                    <input type="date" name="issuedon" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+  
+                                <div class="col-span-6 sm:col-span-2">
+                                    <label for="first_name" class="block text-sm font-medium text-gray-700">Issued At</label>
+                                    <input type="text" name="issuedon" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+  
+                                <div class="col-span-6 sm:col-span-6">
+                                    <label for="first_name" class="block text-sm font-medium text-gray-700">Bearer's Full Name</label>
+                                    <input type="text" name="stolenfullname" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-8">
+                                </div>
+  
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="first_name" class="block text-sm font-medium text-gray-700">State how it was lost/stolen</label>
+                                    <textarea name="lost" id="" cols="30" rows="10" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md lg:h-20"></textarea>
+                                </div>
+                                
+  
+                                <div class="col-span-6 sm:col-span-3">
+                                  <label for="" class="block text-sm font-medium text-gray-700">Picture of police report</label>
+                                  <input type="file" name="police" id="" class="my-2 block text-sm font-medium text-gray-700 bg-bluee-500">
+                                </div>
+  
+                              </div>
+                            </div>
+                            <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                              <button  class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                Next
+                              </button>
+                            </div>
+                        </div>
+    
+                    <!-- End of Next of kin data section-->
+  
+                     </div>
+  
+  
+                     <!-- Ed of Divorced Woman-->
+
+
+                   
+
+
+
+
+
+
+
+                 
+
+
+
+
+                </form>
+           
+
+           
+
+    </div>
+          <!-- End of body wrapper div-->
+          
+
+    
+    
+
+    <script src="/applicant.js"></script>
+    <script>   
+    </script>
+</body>
+</html>
+
